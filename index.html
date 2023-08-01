@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithan's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script src="https://kit.fontawesome.com/f5bba2bdcd.js" crossorigin="anonymous"></script>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <ul>
+            <li><b href="#">Nithan</li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Extracurricular Activities</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Thai-nichi International College</p>
+        <h1>Hi, I'm <span>Nithan Panyos</span><br>from Thailand!</h1>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently a digital engineering sophomore and a Japanese culture enthusiast learning and exploring the digital world along with an infusion of culture and arts, working together in harmony. I am currently searching for part-time job opportunities, domestic and overseas. User Experience design, Internet of Things (IoT and Embedded systems), and digital marketing are my top interests. I would love to have a great job experience with anyone who would like to have me as your intern/coworker!
+                    </p>
+                    <div class="tab-titles">
+                        <p class ="tab-links" onclick = "opentab('education')" >Education</p>
+                        <p class ="tab-links active-link"onclick = "opentab('skills')" >Skills</p>
+                        <p class ="tab-links" onclick = "opentab('experience')" >Certifications</p>
+                        
+                    </div>
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>2007-2022</span><br>Adventist International Mission School: Science Diploma</li>
+                            <li><span>2022-now</span><br>Thai-nichi Institute of Technology: <br>Thai-nichi International College, Digital Engineering <br>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>skill one</span><br>This is the first skill</li>
+                            <li><span>skill two</span><br>This is the second skill</li>
+                            <li><span>skill three</span><br>This is the third skill</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>exp one</span><br>This is the first experience</li>
+                            <li><span>exp two</span><br>This is the second experience</li>
+                            <li><span>exp three</span><br>This is the third experience</li>
+
+                        </ul>
+                    </div>
+                    
+                </div>
+                    
+                    
+                
+
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <div class="activities">
+        <div class="container">
+            <h1 class ="sub-title">My Activities</h1>
+            <div class="activities-list">
+                <div>
+                    <i class="fa-solid fa-user-ninja"></i>
+                    <h2>Activity ONE</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href ="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-guitar"></i>
+                    <h2>Activity TWO</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href ="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-line"></i>
+                    <h2>Activity THREE</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href ="#">learn more</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="activities-list">
+                <div>
+                    <i class="fa-solid fa-user-ninja"></i>
+                    <h2>Activity ONE</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href ="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-guitar"></i>
+                    <h2>Activity TWO</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href ="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-line"></i>
+                    <h2>Activity THREE</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href ="#">learn more</a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-------portfolio----->
+<div class="container">
+    <div class="portfolio">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/yokohama.jpg">
+                <div class="layer">
+                    <h3>Work 1</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#"><i class="fa-solid fa-user-ninja"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/yokohama.jpg">
+                <div class="layer">
+                    <h3>Work 1</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#"><i class="fa-solid fa-user-ninja"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/yokohama.jpg">
+                <div class="layer">
+                    <h3>Work 1</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#"><i class="fa-solid fa-user-ninja"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----contacts-->
+
+
+
+<div class="container">
+    <div class="portfolio">
+        <h1 class="sub-title">Contact Me!</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/yokohama.jpg">
+                <div class="layer">
+                    <a href="facebook.com/nithannnnn"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/yokohama.jpg">
+                <div class="layer">
+                    <a href="https://www.instagram.com/nithannnnn/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/yokohama.jpg">
+                <div class="layer">
+                    
+                    <a href="https://www.linkedin.com/in/nithan-panyos-88872b178/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
